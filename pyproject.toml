@@ -1,0 +1,20 @@
+[tool.poetry]  # Antatt du bruker poetry; ellers bruk [build-system] for pep517
+name = "inneklima-beregninger"
+version = "0.1.0"
+description = "Python-implementasjon av formler for inneklima fra vedlegg A2 og A3"
+authors = ["Prosjekt VVS/IE/Bygg <prosjekt@example.no>"]
+license = "CC-BY-SA-4.0"
+readme = "README.md"
+repository = "https://github.com/ditt-brukernavn/inneklima-beregninger"
+documentation = "/docs/"
+keywords = ["inneklima", "beregning", "formler", "komfort"]
+
+[tool.poetry.dependencies]
+python = "^3.12"  # Basert på ditt miljø
+
+[tool.poetry.dev-dependencies]  # For utvikling/tester
+pytest = "^7.0"  # Valgfritt for tester
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
