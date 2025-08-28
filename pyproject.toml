@@ -1,19 +1,33 @@
-[tool.poetry]  # Antatt du bruker poetry; ellers bruk [build-system] for pep517
+[project]
 name = "inneklima-beregninger"
 version = "0.1.0"
 description = "Python-implementasjon av formler for inneklima fra vedlegg A2 og A3"
 authors = ["Prosjekt VVS/IE/Bygg <prosjekt@example.no>"]
 license = "CC-BY-SA-4.0"
 readme = "README.md"
-repository = "https://github.com/ditt-brukernavn/inneklima-beregninger"
-documentation = "/docs/"
 keywords = ["inneklima", "beregning", "formler", "komfort"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Creative Commons Attribution ShareAlike License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+Repository = "https://github.com/ditt-brukernavn/inneklima-beregninger"
+Documentation = "https://github.com/ditt-brukernavn/inneklima-beregninger/tree/main/docs"
+
+[tool.poetry]
+package-mode = true
 
 [tool.poetry.dependencies]
-python = "^3.12"  # Basert på ditt miljø
+python = "^3.12 || ^3.13"  # Oppdatert for å inkludere Python 3.13 (tilgjengelig i 2025)
 
-[tool.poetry.dev-dependencies]  # For utvikling/tester
-pytest = "^7.0"  # Valgfritt for tester
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4"  # Oppdatert til nyeste versjon per 2025 (pytest 8.4.1 utgitt juni 2025)
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
