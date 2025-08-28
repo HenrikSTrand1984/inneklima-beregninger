@@ -1,21 +1,50 @@
-MIT License
 
 Copyright (c) 2025 Henrik Strand
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+---
+title: "License – Creative Commons Attribution-ShareAlike 4.0 International"
+document_id: "LICENSE-CC-BY-SA-4.0"
+version: "1.0"
+status: "Aktiv"
+date: 2025-08-28
+owner: "Hs"
+contact: "hs@info.no"
+path: "/LICENSE.md"
+tags: ["license", "creativecommons", "cc-by-sa-4.0"]
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+# 📜 License
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This repository and its documentation are licensed under the terms of the  
+**Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** license.  
+
+👉 Full license text: [https://creativecommons.org/licenses/by-sa/4.0/legalcode](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
+
+---
+
+## ✅ You are free to
+- **Share** — copy and redistribute the material in any medium or format.  
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.  
+
+---
+
+## 📌 Under the following terms
+- **Attribution (BY):** You must give appropriate credit, provide a link to the license, and indicate if changes were made.  
+- **ShareAlike (SA):** If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.  
+- **No additional restrictions:** You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.  
+
+---
+
+## ℹ️ Disclaimer
+Creative Commons Corporation ("Creative Commons") is not a law firm and does not provide legal services or legal advice.  
+Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship.  
+
+Creative Commons makes its licenses and related information available on an **"as-is" basis**.  
+Creative Commons gives **no warranties** regarding its licenses, any material licensed under their terms and conditions, or any related information.  
+Creative Commons disclaims **all liability** for damages resulting from their use to the fullest extent possible.  
+
+---
+
+## 📚 Attribution format for reuse
+When reusing content from this repository, please include the following attribution:  
+
