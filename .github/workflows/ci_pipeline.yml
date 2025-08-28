@@ -1,0 +1,43 @@
+name: CI Pipeline for Inneklima Beregninger
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Poetry
+        run: pip install poetry
+      - name: Check Poetry Lock File
+        run: poetry lock --check
+      - name: Install dependencies
+        run: poetry install --no-root
+      - name: Run A2 scripts
+        run: |
+          poetry run python src/a2/a2_ventilasjon.py
+          poetry run python src/a2/a2_co2_massebalanse.py
+          poetry run python src/a2/a2_varmelast.py
+          poetry run python src/a2/a2_fukt_duggpunkt.py
+          poetry run python src/a2/a2_termisk_komfort.py
+          poetry run python src/a2/a2_stoy_sabine.py
+      - name: Run A3 scripts
+        run: |
+          poetry run python src/a3/a3_co2_balanse.py
+          poetry run python src/a3/a3_ventilasjonsvarmetap.py
+          poetry run python src/a3/a3_fukt_balanse.py
+          poetry run python src/a3/a3_operativ_temperatur.py
+          poetry run python src/a3/a3_trekk_draught.py
+          poetry run python src/a3/a3_stoy_summering.py
+          poetry run python src/a3/a3_dagslys_df.py
+          poetry run python src/a3/a3_pmv_ppd.py
+          poetry run python src/a3/a3_ventilasjonseffektivitet.py
+          poetry run python src/a3/a3_eksempelkalkyler.py
+      - name: Run tests
+        run: poetry run pytest tests/
