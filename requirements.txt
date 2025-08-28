@@ -1,0 +1,5 @@
+# Kjørende avhengigheter (ingen nødvendige utover Python standard)
+# math er innebygd, så tom.
+
+# For utvikling/tester (valgfritt):
+# pytest>=7.0
