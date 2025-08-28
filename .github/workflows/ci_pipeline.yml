@@ -1,9 +1,11 @@
 name: CI Pipeline for Inneklima Beregninger
+
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,6 +21,8 @@ jobs:
         run: poetry lock --check
       - name: Install dependencies
         run: poetry install --no-root
+      - name: Create reports directory
+        run: mkdir -p reports
       - name: Run A2 scripts
         run: |
           poetry run python src/a2/a2_ventilasjon.py
@@ -39,5 +43,23 @@ jobs:
           poetry run python src/a3/a3_pmv_ppd.py
           poetry run python src/a3/a3_ventilasjonseffektivitet.py
           poetry run python src/a3/a3_eksempelkalkyler.py
-      - name: Run tests
-        run: poetry run pytest tests/
+      - name: Run tests with coverage and JUnit XML
+        run: |
+          poetry run pytest tests/ --junitxml=reports/junit.xml --cov=src --cov-report=xml:reports/coverage.xml --cov-report=html:reports/coverage_html
+      - name: Upload script reports and logs
+        uses: actions/upload-artifact@v4
+        if: always()  # Upload selv om det feiler
+        with:
+          name: script-reports
+          path: reports/*.json  # Eller *.txt hvis du bruker tekstlogs
+          retention-days: 30
+      - name: Upload test reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-reports
+          path: |
+            reports/junit.xml
+            reports/coverage.xml
+            reports/coverage_html/
+          retention-days: 30
