@@ -1,17 +1,29 @@
-# Inneklima Beregninger
+---
+title: "Inneklima – Beregningsmoduler"
+document_id: "INNEKLIMA-CALC-0001"
+version: "1.0"
+status: "Aktiv"
+date: 2025-08-28
+owner: "Hs"
+contact: "hs@info.no"
+path: "/projects/inneklima_beregninger/README.md"
+tags: ["inneklima", "beregninger", "ventilasjon", "CO2", "varmelast", "python"]
+license: "CC-BY-SA-4.0"
+---
 
-Python-implementasjon av formler fra vedlegg A2 og A3 for inneklima-beregninger (ventilasjon, CO2, varmelast, etc.).
+# 🌿 Inneklima – Beregningsmoduler
 
-## Installasjon
-1. Installer Poetry: `pip install poetry`
-2. Installer dependencies: `poetry install`
+Python-implementasjon av formler fra **vedlegg A2 og A3** for inneklima-beregninger:  
+- Ventilasjonsberegning  
+- CO₂-nivå og luftkvalitet  
+- Varmelast  
 
-## Kjøring
-Kjør en fil: `poetry run python src/a2/a2_ventilasjon.py`
+Prosjektet gir grunnlag for verifisering av prosjekteringsmål i ventilasjon og inneklima, og kan kobles videre mot simulering og dokumentasjon.
 
-## Tester
-`poetry run pytest tests/`
+---
 
-## GitHub Actions
-Workflow i .github/workflows/ci_pipeline.yml kjører scriptene og tester automatisk.# inneklima-beregninger
-Python-implementasjon av formler fra vedlegg A2 og A3 for inneklima-beregninger
+## 📦 Installasjon
+
+1. **Installer Poetry**  
+   ```bash
+   pip install poetry
