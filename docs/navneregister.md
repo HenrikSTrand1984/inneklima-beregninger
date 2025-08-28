@@ -50,4 +50,18 @@
 | S_i | m² | Flateareal i Sabine-formel |
 | sigma (σ) | W/(m²·K⁴) | Stefan-Boltzmann-konstant (5,67·10⁻⁸) |
 | t | s | Tid (for transient modell) |
-| T
+| T_60 | s | Etterklangstid (reverberation time) |
+| T_a | °C | Lufttemperatur |
+| T_dp (T_d) | °C | Duggpunktstemperatur |
+| T_i | °C | Innetemperatur |
+| T_o | °C | Utetemperatur |
+| T_op (t_o) | °C | Operativ temperatur |
+| T_r | °C | Middel strålingstemperatur (MRT) |
+| tau (τ) | s | Tidskonstant (f.eks. V/Q for luftalder) |
+| Tu | - | Turbulensintensitet (desimal, typisk 0,1–0,4) |
+| U | W/(m²·K) | U-verdi (varmeledningsevne) |
+| v | m/s | Lufthastighet |
+| V | m³ | Romvolum |
+| w_i | kg/kg | Absolutt fuktighet innendørs |
+| w_o | kg/kg | Absolutt fuktighet utendørs |
+| x | g/kg | Spesifikk fuktighet (absolutt fuktighet) |
